@@ -1,4 +1,5 @@
 import * as React from "react";
+//import ScrollPicker from "react-native-wheel-scrollview-picker";
 
 interface MenuItemProps {
   imageSrc: string;
@@ -66,6 +67,14 @@ const MyComponent: React.FC = () => {
     alert(
       "서빙 서비스를 제공하는 매장입니다. 테이블에 적혀있는 테이블 번호를 입력해주세요."
     );
+    // <ScrollPicker
+    //     dataSource={["1", "2", "3", "4", "5", "6"]}
+    //     selectedIndex={1}
+    //     wrapperHeight={180}
+    //     wrapperBackground="#FFFFFF"
+    //     itemHeight={60}
+    //     highlightColor="#d8d8d8"
+    //     highlightBorderWidth={2}
   };
 
   const handleItemClick = () => {};
