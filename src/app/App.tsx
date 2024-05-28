@@ -68,6 +68,8 @@ const MyComponent: React.FC = () => {
     );
   };
 
+  const handleItemClick = () => {};
+
   return (
     <div className="flex flex-col bg-white max-w-[360px] rounded-[30px]">
       <div className="flex flex-col px-5 w-full">
@@ -112,7 +114,7 @@ const MyComponent: React.FC = () => {
             <div className="self-stretch my-auto">버거메뉴</div>
             <div className="self-stretch my-auto">사이드메뉴</div>
           </nav>
-          <hr className="shrink-0 mt-2.5 mr-3.5 ml-3.5 max-w-full h-px border border-solid bg-zinc-500 border-zinc-500 w-[323px]" />
+          <hr className="shrink-0 mt-2.5 mr-3.5 ml-3.5 max-w-full h-px border border-solid bg-zinc-500 border-zinc-500 w-[323px]" onClick={handleItemClick}/>
           {menuItems.map((item, index) => (
             <MenuItem key={index} {...item} />
           ))}
